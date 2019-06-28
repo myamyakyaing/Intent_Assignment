@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#62b3e5"
+        tools:context=".DetailActivity">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="70dp"
+            android:layout_marginTop="30dp">
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtSearch"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search or type web address"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/btn_plus"
+                android:id="@+id/imgSearch"
+                android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="80dp">
+
+        <androidx.cardview.widget.CardView
+                android:id="@+id/imgCardView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="50dp"
+                android:layout_marginBottom="30dp">
+            <ImageView
+                    android:id="@+id/ivProfileImage"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+                android:background="@mipmap/camera"
+                android:layout_width="75dp"
+                android:layout_height="61dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="65dp"
+                android:layout_marginRight="50dp"
+                android:id="@+id/btnCamera"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Phone Number"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:layout_marginRight="40dp"
+                android:id="@+id/edtPhone"/>
+
+        <Button
+                android:id="@+id/btnPhone"
+                android:background="@mipmap/phone_icon"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_add_image"/>
+    </LinearLayout>
+
+</LinearLayout>
